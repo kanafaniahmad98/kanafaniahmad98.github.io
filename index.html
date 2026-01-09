@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ahmad Kanafani</title>
 
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
@@ -43,9 +42,10 @@
 
     .hero {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.4fr 0.6fr;
       gap: 48px;
       margin-top: 60px;
+      align-items: flex-start;
     }
 
     h1 {
@@ -59,10 +59,19 @@
       font-size: 16px;
     }
 
-    .photo img {
-      width: 100%;
-      border-radius: 12px;
+    /* IMAGE CHANGES START HERE */
+    .photo {
+      display: flex;
+      justify-content: flex-end;
     }
+
+    .photo img {
+      width: 200px;        /* smaller image */
+      max-width: 100%;
+      border-radius: 12px;
+      opacity: 0.95;
+    }
+    /* IMAGE CHANGES END HERE */
 
     .icons {
       margin-top: 32px;
@@ -89,6 +98,11 @@
       .hero {
         grid-template-columns: 1fr;
       }
+
+      .photo {
+        justify-content: flex-start;
+        margin-top: 32px;
+      }
     }
   </style>
 </head>
@@ -104,11 +118,11 @@
         <h1>Ahmad Kanafani</h1>
 
         <p>
-          Hi, my name is Ahmad Kanafani. Proud Egyptian, Palestinian, Jordanian, American. 
+          Hi, my name is Ahmad Kanafani. Proud Egyptian, Palestinian, Jordanian, American.
         </p>
 
         <p>
-         Attached is my current geopolitical analysis and my assessment of what may come next in our increasingly complex but fascinating world.
+          Attached is my current geopolitical analysis and my assessment of what may come next in our increasingly complex but fascinating world.
         </p>
 
         <div class="icons">
