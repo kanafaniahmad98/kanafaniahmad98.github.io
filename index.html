@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont;
+      background: #0b0b0b;
+      color: #eaeaea;
+    }
+
+    a { color: #ff6a00; text-decoration: none; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 24px;
+      border-bottom: 1px solid #222;
+      padding-bottom: 16px;
+    }
+
+    nav a {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ff6a00;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+      margin-top: 60px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #cfcfcf;
+      font-size: 16px;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .icons {
+      margin-top: 32px;
+      display: flex;
+      gap: 20px;
+      font-size: 22px;
+    }
+
+    .icons a {
+      color: #ddd;
+    }
+
+    .icons a:hover {
+      color: #ff6a00;
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="#">about</a>
+      <a href="#">projects</a>
+      <a href="#">repositories</a>
+      <a href="cv.pdf">cv</a>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <h1>Your Name</h1>
+
+        <p>
+          Hello! I’m a senior at Harvard studying Economics & Statistics.
+        </p>
+
+        <p>
+          I’m interested in investing, technology, and markets. I write about
+          finance, startups, and economic ideas, and I like turning theory into
+          practical projects.
+        </p>
+
+        <p>
+          In my free time, I enjoy reading, lifting, and building things.
+        </p>
+
+        <div class="icons">
+          <a href="mailto:you@email.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/YOURNAME"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/YOURNAME"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/YOURNAME"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="photo.jpg" alt="Your photo">
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Your Name
+    </footer>
+  </div>
+</body>
+</html>
